@@ -1,0 +1,52 @@
+/* Template Name: Multicone 
+   Author: Multicone
+   Version: 1.0.0
+   Created: March 2021
+*/
+/**********************
+01.Variables
+02.Loader
+***********************/
+.multicone-loader {
+  height: auto;
+  width: 500px;
+}
+
+.multicone-loader path {
+  fill: transparent;
+  stroke-width: 10;
+  stroke: #29344a;
+  stroke-dasharray: 1340;
+  stroke-dashoffset: 1340;
+  animation: multicone-animation 5s linear infinite;
+}
+
+@keyframes multicone-animation {
+  0% {
+    stroke-dashoffset: 1340;
+  }
+  80% {
+    fill: transparent;
+    stroke-dashoffset: 0;
+  }
+  90% {
+    fill: #29344a;
+    stroke-dashoffset: 0;
+  }
+  100% {
+    fill: #29344a;
+    stroke-dashoffset: 0;
+  }
+}
+
+body {
+  height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

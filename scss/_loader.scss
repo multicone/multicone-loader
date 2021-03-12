@@ -1,0 +1,33 @@
+
+.multicone-loader{
+      height: auto;
+      width: 500px;
+
+      path{
+            fill: transparent;
+            stroke-width: 10;
+            stroke: $loader-color;
+            stroke-dasharray:1340;
+            stroke-dashoffset:1340;
+            animation: multicone-animation 5s linear infinite;
+      }
+
+}
+
+@keyframes multicone-animation {
+      0%{
+            stroke-dashoffset: 1340;
+      }
+      80%{
+            fill: transparent;
+            stroke-dashoffset: 0;
+      }
+      90%{
+            fill: $loader-color;
+            stroke-dashoffset: 0;
+      }
+      100%{
+            fill: $loader-color;
+            stroke-dashoffset: 0;
+      }
+}

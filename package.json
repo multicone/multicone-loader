@@ -1,0 +1,16 @@
+{
+  "name": "svg-animation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node-sass -w --output-style expanded scss/style.scss -o assets/css",
+    "build": "node-sass --output-style compressed scss/style.scss -o assets/css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

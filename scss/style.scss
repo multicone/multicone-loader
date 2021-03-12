@@ -1,0 +1,28 @@
+/* Template Name: Multicone 
+   Author: Multicone
+   Version: 1.0.0
+   Created: March 2021
+*/
+
+/**********************
+01.Variables
+02.Loader
+***********************/
+
+
+@import "variables";
+@import "loader";
+
+
+body{
+      height: 100vh;
+}
+
+.container{
+      
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
